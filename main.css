@@ -1,0 +1,150 @@
+body
+{
+    max-width: 1920px;
+    max-height: 1080px;
+    min-width: 800px;
+    overflow: hidden;
+    background-image: url('819-5626c38d94eb7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.image
+{     
+     height: 1080px;
+     display: flex;
+}
+.back
+{
+    display: flex;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.iconformenu
+{
+    position: fixed;
+    top: 50px;
+    left: 70px;
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+    transition: 0.5s;
+}
+.animat
+{
+    opacity: 0;
+    transition: 0.4s opacity;
+    left: 55px;
+    top: 60px;
+    width: 40px;
+    height: 50px;
+}
+.animat1
+{
+    left: 0px;
+    transition: 0.3s left; 
+}
+.animat2
+{   
+    position: absolute;
+    bottom: 10px;
+    transition: 0.4s bottom;
+}
+ul
+{
+    background-color: transparent;
+    font-size: 30px;
+    overflow: hidden;
+    color: #F5F5F5;
+    text-align: left;
+    margin: 0;
+    transition: 0.5s;
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    left: -450px;
+}
+ul li
+{   
+    display: block;
+    padding: 20px;
+    height: 50px;
+}
+.clone:hover
+{
+    font-size: 35px;
+    transition: 0.2s font-size;
+    background: #9E9E9E;
+    border-radius: 10px;
+}
+.close
+{
+    width: 30px;
+    height: 40px;
+    background: transparent;
+}
+.container
+{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+.myname
+{
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 60px;
+    align-self: center;
+    width: 100%;
+    transition: 0.5s;
+}
+h1
+{
+    color: #F5F5F5;
+}
+.about
+{
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px 20px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: #838383;
+    border-radius: 10px;
+    height: 200px;
+}
+.contact
+{
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px 20px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: #838383;
+    border-radius: 10px;
+    height: 200px;
+}
+.portfolio
+{
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px 20px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: #838383;
+    border-radius: 10px;
+    height: 200px;
+}
+.ab, .por, .con
+{
+    display: none;
+}
