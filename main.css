@@ -2,15 +2,82 @@ body
 {
     max-width: 1920px;
     max-height: 1080px;
-    min-width: 800px;
-    overflow: hidden;
     background-image: url('819-5626c38d94eb7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: auto;
 }
-
+.container
+{   
+    display: flex;
+    max-width: 100%;
+    height: 1080px;
+}
+.header
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+}
+.myname
+{   
+    display: flex;
+    flex-flow: column wrap;
+    color: #E91E63;
+    text-align: center;
+    font-size: 60px;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.name
+{
+    align-self: center;
+    font-size: 110px;
+    color: white;
+}
+.prof
+{
+    align-self: center;
+}
+ul
+{
+    background-color: transparent;
+    font-size: 30px;
+    overflow: hidden;
+    color: #F5F5F5;
+    text-align: left;
+    margin: 0;
+    transition: 0.5s;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: -450px;
+}
+ul li
+{   
+    display: block;
+    padding: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.close
+{
+    width: 30px;
+    height: 40px;
+    background: transparent;
+}
+.clone:hover
+{
+    font-size: 35px;
+    transition: 0.2s font-size;
+    background: #9E9E9E;
+    border-radius: 10px;
+}
 .image
 {     
      height: 1080px;
@@ -25,13 +92,20 @@ body
 }
 .iconformenu
 {
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: 70px;
     cursor: pointer;
     color: white;
     font-size: 32px;
     transition: 0.5s;
+}
+.canhelpclose
+{
+    position: absolute;
+    top: -32px;
+    right: 30px;
+    cursor: pointer;
 }
 .animat
 {
@@ -49,61 +123,8 @@ body
 }
 .animat2
 {   
-    position: absolute;
-    bottom: 10px;
-    transition: 0.4s bottom;
-}
-ul
-{
-    background-color: transparent;
-    font-size: 30px;
-    overflow: hidden;
-    color: #F5F5F5;
-    text-align: left;
-    margin: 0;
-    transition: 0.5s;
-    width: 200px;
-    position: fixed;
-    top: 50px;
-    left: -450px;
-}
-ul li
-{   
-    display: block;
-    padding: 20px;
-    height: 50px;
-}
-.clone:hover
-{
-    font-size: 35px;
-    transition: 0.2s font-size;
-    background: #9E9E9E;
-    border-radius: 10px;
-}
-.close
-{
-    width: 30px;
-    height: 40px;
-    background: transparent;
-}
-.container
-{
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 100%;
-}
-.myname
-{
-    color: #EEEEEE;
-    text-align: center;
-    font-size: 60px;
-    align-self: center;
-    width: 100%;
-    transition: 0.5s;
-}
-h1
-{
-    color: #F5F5F5;
+    opacity: 0;
+    transition: 0.4s;
 }
 .about
 {
@@ -111,25 +132,65 @@ h1
     color: white;
     font-size: 20px;
     margin: 20px 20px;
-    position: absolute;
+    padding: 10px 10px;
     width: 50%;
+    position: absolute;
     text-align: center;
-    background-color: #838383;
+    background-color: rgba(90, 99, 99, 0.5);
     border-radius: 10px;
-    height: 200px;
+    height: auto;
 }
-.contact
-{
-    display: none;
+.about1
+{   
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     color: white;
     font-size: 20px;
-    margin: 20px 20px;
-    position: absolute;
+    padding: 10px 10px;
     width: 50%;
     text-align: center;
-    background-color: #838383;
+    background-color: rgba(90, 99, 99, 0.5);
     border-radius: 10px;
-    height: 200px;
+    height: auto;
+}
+.portfolio1
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(90, 99, 99, 0.5);
+    border-radius: 10px;
+    height: auto;
+}
+.contact1
+{
+    
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(90, 99, 99, 0.5);
+    border-radius: 10px;
+    height: auto;
+}
+.foricon
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.avatar
+{
+    width: 40%;
 }
 .portfolio
 {
@@ -140,11 +201,33 @@ h1
     position: absolute;
     width: 50%;
     text-align: center;
-    background-color: #838383;
+    background-color: rgba(90, 99, 99, 0.5);
     border-radius: 10px;
-    height: 200px;
+    height: auto;
 }
-.ab, .por, .con
+.contact
 {
     display: none;
+    color: white;
+    font-size: 20px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(90, 99, 99, 0.5);
+    border-radius: 10px;
+    height: auto;
+}
+
+.exp
+{
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
 }
